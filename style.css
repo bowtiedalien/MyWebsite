@@ -1,0 +1,127 @@
+body{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  grid-template-rows: 200px auto;
+  grid-template-areas:
+  "nav header"
+  "nav main";
+  margin:0px;
+  font-family: courier;
+}
+  .header{
+    margin:3px;
+    margin-left:10px;
+
+  }
+  .nav{
+    grid-area: nav;
+    background-image: url("nav_background.jpg");
+    padding:10px;
+    margin-left: 0px;
+    margin-right:10px;
+    height: 150%;
+  }
+  .nav ul{
+    list-style-type: none; /* to remove bullet points */
+    padding: 0; /* to remove the padding that stays after removing
+    bullet points*/
+  }
+  .nav li{
+    background-color: lightgrey;
+    width: 190px;
+    margin: 2px;
+    font-size: 15px;
+  }
+
+/* Projects page*/
+.main-projects{
+  grid-area:main;
+  display: grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+  grid-template-rows: 100px auto; /*row1: label, row2: picture+desc*/
+  grid-gap:1em;
+}
+
+div.label{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  /* height:20px; */
+}
+
+  .gallery-grid{  /* this contains all pictures and description*/
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    grid-template-rows: auto;
+    grid-row-gap:1em;
+  }
+
+  div.gallery-item{
+
+    /* width:400px; */
+
+    display:grid;
+    grid-auto-rows: 1fr 0.1fr;
+    grid-template-areas:
+    "pic"
+    "desc";
+    /* grid-template-rows: 1fr 0.2fr; */
+    /* height:400px; */
+    grid-gap:1em;
+    margin:5px;
+    padding:5px;
+    border: 1px solid #ccc;
+    float:left;
+  }
+
+  div.gallery-item video{
+    grid-area:pic;
+    /* grid-row-start:1;
+    grid-row-end: 1; */
+    width:100%;
+    /* height:auto; */
+  }
+
+  div.gallery-item img{
+    grid-area:pic;
+    /* grid-row-start:1;
+    grid-row-end: 1; */
+      width:100%;
+      /* height:auto; /*depending on the description under it*/ */
+    }
+
+  div.gallery-item .desc{
+    grid-area:desc;
+    /* grid-row-start: 2;
+    grid-row-end: 2; */
+    padding:5px;
+    text-align: center;
+  }
+
+  .fictionBooks{
+    display:block;
+  }
+  .nonfictionBooks{
+    display: block;
+  }
+
+.fav_figures{
+  display: inline-block; //this makes images sit beside each other
+  margin-bottom:5px;
+  margin-top:5px;
+  width:200px; //to give caption limited area
+  text-align: center; //to center caption below it
+  /* float:left; */
+}
+
+
+
+#more{
+  display: none;
+}
+
+figcaption{
+  display:block;
+}

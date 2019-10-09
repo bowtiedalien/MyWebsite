@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Sarah's recommendation</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+  </head>
+  <body>
+    <div class="header">
+      <h1> Stuff I liked </h1>
+      <h3>  </h3>
+    </div>
+
+    <div class="nav">
+      <img src="no_pic.jpg" alt="my picture">
+      <center> <h2> Sarah Ahmed </h2> </center>
+      <ul>
+        <li><a href="index.html">Main Page</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="courses.html">Courses taken</a></li>
+        <li><a href="jobs.html">Jobs and Internships</a></li>
+        <li><a href="favourites.html">Things I recommend</a></li>
+        <li><a href="contactme.html">Contact Informations</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+
+      <hr>
+      <h3> Books </h3>
+      <hr>
+      <div id="nonfictionBooks">
+      <h4> Life </h4>
+
+        <figure class="fav_figures">
+          <img src="recommend/DeepWork.jpg" alt="" width="100px">
+        <figcaption><a href="recommend/DeepWork.jpg">Deep Work by Cal Newport</a></figcaption>
+        </figure>
+        <figure class="fav_figures">
+          <img src="recommend/howtotalk.jpg" alt="" width="100px">
+        <figcaption><a href="recommend/howtotalk.jpg">How to talk so kids can listen</a></figcaption>
+        </figure>
+        <figure class="fav_figures">
+          <img src="recommend/altarbeya-alnabaweya.png" alt="" width="100px">
+        <figcaption><a href="recommend/altarbeya-alnabaweya.png">منهج التربية النبوية للطفل</a></figcaption>
+        </figure>
+
+      <!-- put this later: <button onclick="myFunction()" id="myBtn"> Read more </button> -->
+      </div>
+      <div id="more">
+        <!-- put more books here -->
+    </div>
+
+      <div id="fictionBooks">
+      <h4> Fiction </h4>
+      <figure class="fav_figures">
+        <img src="recommend/SaqAlBamboo.jpg" alt="" width="100px">
+      <figcaption><a href="recommend/SaqAlBamboo.jpg">ساق البامبو</a></figcaption>
+      </figure>
+      </div>
+
+      <hr>
+      <h3> Articles </h3>
+      <hr>
+
+      <hr>
+      <h3> Documentaries </h3>
+      <hr>
+
+      <hr>
+      <h3> Videos </h3>
+      <hr>
+
+      <hr>
+      <h3> Movies </h3>
+      <hr>
+
+      <hr>
+      <h3> Songs </h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=BMfzPbONyVA">Little Wonders - Meet the Robinsons</a></li>
+        <li><a href="https://www.youtube.com/watch?v=SjIxn_NmVS0">I'll keep you safe - Sleeping At Last</a></li>
+        <li><a href="https://www.youtube.com/watch?v=BFkTu8Y1KLs">I want you to have it all - Jason Mraz</a></li>
+
+      </ul>
+      <hr>
+    </div>
+
+  </body>
+  <script type="text/javascript">
+  function myFunction() {
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (moreText.style.display == "none") {
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    } else {
+      moreText.style.display = "none";
+      btnText.innerHTML = "Read more";
+    }
+  }
+  </script>
+</html>

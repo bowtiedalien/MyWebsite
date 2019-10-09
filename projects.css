@@ -1,0 +1,56 @@
+body{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  grid-template-rows: 200px auto;
+  grid-template-areas:
+  "nav header"
+  "nav main";
+  margin:0px;
+  font-family: courier;
+}
+  .header{
+    margin:3px;
+    margin-left:10px;
+
+  }
+  .nav{
+    grid-area: nav;
+    background-image: url("nav_background.jpg");
+    padding:10px;
+    margin-left: 0px;
+    margin-right:10px;
+    height: 150%;
+  }
+  .nav ul{
+    list-style-type: none; /* to remove bullet points */
+    padding: 0; /* to remove the padding that stays after removing
+    bullet points*/
+  }
+  .nav li{
+    background-color: lightgrey;
+    width: 190px;
+    margin: 2px;
+    font-size: 15px;
+  }
+
+  div.gallery{
+    width:400px;
+    height:400px;
+    margin:5px;
+    border: 1px solid #ccc;
+    float:left;
+  }
+  div.gallery video{
+    width:100%;
+    height:auto;
+  }
+
+    div.gallery img{
+      width:100%;
+      height:auto; /*depending on the description under it*/
+    }
+
+    div.gallery .desc{
+      padding:15px;
+      text-align: center;
+    }
