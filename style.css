@@ -7,10 +7,10 @@ body{
   "nav main";
   margin:0px;
   font-family: courier;
+
 }
   .header{
     margin:3px;
-    margin-left:10px;
 
   }
   .main.thoughts{
@@ -21,11 +21,13 @@ body{
   .nav{
     grid-area: nav;
     background-image: url("nav_background.jpg");
+    background-position: left;
     padding:10px;
     margin-left: 0px;
     margin-right:10px;
     height: 150%;
   }
+  
   .thoughts{
     background-image: url("thoughts_background2.jpg");
     background-repeat: repeat;
