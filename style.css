@@ -6,8 +6,9 @@ body{
   "nav header"
   "nav main";
   margin:0px;
-  font-family: courier;
-
+  font-family: 'Raleway', courier;
+  /* background-image: url("color_background2.jpg"); */
+  background-color: #f9f7f1;
 }
   .header{
     margin:3px;
@@ -20,14 +21,15 @@ body{
 
   .nav{
     grid-area: nav;
-    background-image: url("nav_background.jpg");
+    /* background-image: url("nav_back.jpg"); */
+    background-color: #816ad6;
     background-position: left;
     padding:10px;
     margin-left: 0px;
     margin-right:10px;
     height: 150%;
   }
-  
+
   .thoughts{
     background-image: url("thoughts_background2.jpg");
     background-repeat: repeat;
@@ -40,6 +42,11 @@ body{
   }
   .nav.thoughts li{
     background-color: #FBFEF9;
+
+  }
+  .nav.thoughts li a{
+    color:black;
+
   }
   .nav ul{
     list-style-type: none; /* to remove bullet points */
@@ -47,10 +54,16 @@ body{
     bullet points*/
   }
   .nav li{
-    background-color: lightgrey;
+    background-color: darkgrey;
     width: 190px;
     margin: 2px;
     font-size: 15px;
+    padding:5px; 
+  }
+  .nav li a{
+    color:white;
+    font-weight: bold;
+    padding: 4px;
   }
 
 /* Projects page*/
