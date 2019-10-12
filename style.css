@@ -10,6 +10,12 @@ body{
   /* background-image: url("color_background2.jpg"); */
   background-color: #f9f7f1;
 }
+  #profpic{
+    width:200px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    margin:10px;
+    /*transform: rotateZ(270deg);*/
+  }
   .header{
     margin:3px;
 
@@ -28,6 +34,14 @@ body{
     margin-left: 0px;
     margin-right:10px;
     height: 150%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* ref 1 */
+    /*
+    box-shadow: inset(inset/write nothing, is shadow shown on the inside?) horizontal(in +-px) vertical(in +-px) blur-radius(in px, how blurred will the shadow be?) spread(in px, how far away will the shadow spread from the shape?/how thick?) color;
+
+    notes:
+    1. you can give multiple values by putting a coma after the color value, and setting horizontal, vertical and color values again
+    2. you can zero out the horizontal and vertical values and that makes the shadow all around the box
+    */
   }
 
   .thoughts{
@@ -58,7 +72,7 @@ body{
     width: 190px;
     margin: 2px;
     font-size: 15px;
-    padding:5px; 
+    padding:5px;
   }
   .nav li a{
     color:white;
@@ -161,3 +175,8 @@ div.label{
 figcaption{
   display:block;
 }
+
+/*
+References:
+- give shadow to nav bar: https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5
+*/
