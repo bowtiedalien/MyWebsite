@@ -1,3 +1,4 @@
+/* Common styles */
 body{
   display: grid;
   grid-template-columns: 0.5fr 2fr;
@@ -5,7 +6,7 @@ body{
   grid-template-areas:
   "nav header"
   "nav main";
-  margin:0px;
+  margin:2px;
   font-family: 'Raleway', courier;
   /* background-image: url("color_background2.jpg"); */
   background-color: #f9f7f1;
@@ -19,10 +20,7 @@ body{
   .header{
     margin:3px;
 
-  }
-  .main.thoughts{
-    margin-left:10%;
-    margin-right:10%;
+  /* thoughts page */
   }
 
   .nav{
@@ -44,24 +42,6 @@ body{
     */
   }
 
-  .thoughts{
-    background-image: url("thoughts_background2.jpg");
-    background-repeat: repeat;
-  }
-  #diary{
-    width:90%;
-    text-align: right;
-    font-size: 15pt;
-    font-family: 'Lateef', cursive;
-  }
-  .nav.thoughts li{
-    background-color: #FBFEF9;
-
-  }
-  .nav.thoughts li a{
-    color:black;
-
-  }
   .nav ul{
     list-style-type: none; /* to remove bullet points */
     padding: 0; /* to remove the padding that stays after removing
@@ -80,8 +60,34 @@ body{
     padding: 4px;
   }
 
+  /* Thoughts page */
+  .main.thoughts{
+    margin-left:10%;
+    margin-right:10%;
+  }
+
+  .thoughts{
+    background-image: url("thoughts_background2.jpg");
+    background-repeat: repeat;
+  }
+
+  #diary{
+    width:90%;
+    text-align: right;
+    font-size: 15pt;
+    font-family: 'Lateef', cursive;
+  }
+  .nav.thoughts li{
+    background-color: #FBFEF9;
+
+  }
+  .nav.thoughts li a{
+    color:black;
+
+  }
+
 /* Projects page*/
-.main-projects{
+.fprojects{
   grid-area:main;
   display: grid;
   /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
@@ -98,11 +104,15 @@ div.label{
   .gallery-grid{  /* this contains all pictures and description*/
     grid-row-start: 2;
     grid-row-end: 2;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: baseline;
     grid-template-rows: auto;
     grid-row-gap:1em;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+    align-items: center;
+    overflow-y: scroll;
+    height:200px;
   }
 
   div.gallery-item{
@@ -119,8 +129,17 @@ div.label{
     grid-gap:1em;
     margin:5px;
     padding:5px;
+    width: 400px;
     border: 1px solid #ccc;
-    float:left;
+    /*float:left;*/
+  }
+
+  div.gallery-item iframe{
+    grid-area:pic;
+    /* grid-row-start:1;
+    grid-row-end: 1; */
+    width:100%;
+    /* height:auto; */
   }
 
   div.gallery-item video{
@@ -135,7 +154,7 @@ div.label{
     grid-area:pic;
     /* grid-row-start:1;
     grid-row-end: 1; */
-      width:100%;
+    width:100%;
       /* height:auto; /*depending on the description under it*/ */
     }
 
@@ -146,7 +165,12 @@ div.label{
     padding:5px;
     text-align: center;
   }
+  ul {
+    list-style-position: inside;
+    list-style-type: circle;
+  }
 
+  /* Favourites page */
   .fictionBooks{
     display:block;
   }
@@ -160,7 +184,7 @@ div.label{
   margin-top:5px;
   width:200px; //to give caption limited area
   text-align: center; //to center caption below it
-  /* float:left; */
+  overflow-x: scroll;
 }
 
 .arabic-text{
