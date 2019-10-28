@@ -15,13 +15,19 @@ body{
   }
   .nav{
     grid-area: nav;
-    background-image: url("nav_background.jpg");
+    /* display: block;
+    position: sticky; */
+    /* background-image: url("nav_background.jp"); */
     padding:10px;
     margin-left: 0px;
-    margin-right:10px;
+    margin-right: 10px;
     height: 150%;
   }
+  /* .nav-inside{
+    position: sticky;
+  } */
   .nav ul{
+    position: sticky;
     list-style-type: none; /* to remove bullet points */
     padding: 0; /* to remove the padding that stays after removing
     bullet points*/

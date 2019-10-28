@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Questions and Answers</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="QA_styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Caveat|Just+Another+Hand|Nanum+Pen+Script&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <h1> Questions page </h1>
+      <h3> Random questions and their answers in simple terms </h3>
+    </div>
+    <div class="nav">
+      <img id="profpic" src="profpic.jpg" alt="my picture">
+      <div id="NameandList"> <h2> Sarah Ahmed </h2>
+      <ul>
+        <li><a href="index.html">Main Page</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="courses.html">Courses taken</a></li>
+        <li><a href="jobs.html">Experience</a></li>
+        <li><a href="favourites.html">Things I recommend</a></li>
+        <li><a href="thoughts.html">Thoughts</a></li>
+        <li><a href="contactme.html">Contact Informations</a></li>
+        <li><a href="Question&Answers.html">Questions and Answers</a></li>
+      </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="CSQuestions">
+        <h3> CS Questions </h3>
+    <div class="Question"> Q: <span style="color:blue;">W</span><span style="color:yellow;">h</span><span style="color:orange;">a</span>t is an API? </div>
+    <div class="Answer">A: <!--  API stands for Application Program Interface. It connects you to all possible airline companies you can book tickets in. It is the piece of software the handles the communications between you, as a user, and the main server.
+      For example, an airplane booking website is an API that takes the information from you and sends it to the relevant airline company server, then sends you back any information the server wants to tell you. APIs are like waiters between
+    customers and the kitchen; getting your orders to the kitchen and delivering you the order from the kitchen.
+  <br> -->
+    ref: <a href="https://www.youtube.com/watch?v=s7wmiS2mSXY">What is an API?</a></div>
+
+  <div class="Question"> Q: What exactly is bash in Linux? </div>
+  <div class="Answer">A: bash is a file to process the commands that you can run in the terminal window. It allows you to write commands and can read commands from an input file! So you can think of it
+    as a translation service between you as the programmer and the operating system.
+
+  <br>
+  <br>
+  ref: <a href="https://www.youtube.com/watch?v=UwHOFznvWV0">What is Bash</a></div>
+
+<div class="Question"> Q: How can I install a Linux distribution from a USB? </div>
+  <div class="Answer">A: Ok, this is how I did it:
+	<ol>
+		<li>install the .iso image of the Linux distribution you want to use. Write the ditribution's name in Google
+and then "install" and you'll get links to install the .iso file. For beginners, Ubuntu or Linux Lite can be used.</li>
+		<li>burn this .iso image to a USB or DVD. I used a USB. A software that can help you make the USB a bootable
+device (meaning: so that Windows can identify that there is an operating system on it that can be booted) is
+Rufus. You can find how exactly to use Rufus to convert a USB to a bootable USB from this link:
+<br>
+<a href="https://www.maketecheasier.com/use-rufus-create-bootable-flash-drive/"> Create bootable USB using Rufus </a>
+		</li>
+		<li>Now you have to tweak the BIOS settings. To access BIOS settings, you can search "Advanced startup" in Windows 10 and click "Restart Now".
+			If that doesn't work, search Google on how to access BIOS on your computer and operating system. Anyway, I changed a bunch of settings
+			<ul> <li> ENABLE legacy </li>
+				<li> DISABLE secure boot </li>
+				<li> edit boot order from boot menu so that the USB boots first <li>
+				<li> additional step: after doing all this, I still couldn't run the bootable file from the USB because it seemed
+					as if Windows was just ignoring it as if it didn't exist. Later I found out this was due to
+					the "fast boot" setting that Windows had. So I disabled that. And because the boot
+					menu was not showing automatically, I also had to change the startup delay from 0 to 10 seconds
+					so that I had time to click ESC to move the boot menu manually. This allowed me to see all the possible
+					options that I could boot from and I was able to choose my USB. </li>
+			</ul>
+				<li> now the USB will boot and you will be greeted with a welcome screen and an option to
+					install the Linux distro. Do that. If you're trying to install Linux Lite, use this link:
+					<a href="https://www.linuxliteos.com/manual/install.html">Install Linux Lite</a>
+					<br>
+					Otherwise, search on how to install your chosen Linux distro.
+				</li>
+	</ol>
+
+
+  ref: <a href="https://www.youtube.com/watch?v=UwHOFznvWV0">What is Bash</a></div>
+
+
+
+  <div class="Question"> Q: What is GCC? </div>
+  <div class="Question"> Q: What kind of terminal is inside CentOS 7? </div>
+  </div>
+</div>
+
+</div>
+  </body>
+</html>

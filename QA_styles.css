@@ -1,0 +1,21 @@
+.main{
+  font-family: 'Goudy Bookletter 1911', cursive;
+}
+.Question{
+  border: solid 1px orange;
+  padding: 10px;
+  width: 300px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+.Answer{
+  border: solid 1px orange;
+  padding: 10px;
+  width: 400px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%
+}
