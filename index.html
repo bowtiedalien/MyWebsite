@@ -1,52 +1,335 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Sarah Ahmed Desouki</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="header">
-      <h1> My Homepage </h1>
-      <h3> My Formal Education </h3>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sara Desouki Computer Engineer</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class="h3 fw-bold d-block d-lg-none">Sara Desouki</span>
+                <img src="./assets/images/profpic.jpg" class="d-none d-lg-block rounded-circle" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobbies">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- //NAVBAR -->
+
+    <!-- CONTENT WRAPPER -->
+    <div id="content-wrapper">
+
+        <!-- HOME -->
+        <section id="home" class="full-height px-lg-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand">Computer Engineer</span> FROM Egypt, Cairo</h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Hi! I'm Sara. I'm currently a Teaching Assistant in Zewail City for Science and Technology. I love to read, to code and to teach.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- //HOME -->
+
+        <!-- SERVICES -->
+        <section id="services" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">SERVICES</h6>
+                        <h1>Services That I Provide</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Web Development</h5>
+                            <p>I can develop websites using .Net Core and ExpressJS frameworks.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-language"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Translation</h5>
+                            <p>I can translate and transcribe lectures, videos, audios. AR -> EN</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-edit"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Content Development</h5>
+                            <p>I can develop and proofread content for Software Engineering curriculums.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- SERVICES -->
+
+        <!-- WORK -->
+        <section id="work" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">WORK</h6>
+                        <h1>My Recent Projects</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/skinhealthapp.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>SkinHealth App</h4>
+                                <p>My Graduation Project. An application that utilises Machine Learning to help diagnose skin cancer.</p>
+                                <p>Technologies used: Flutter, NodeJS, Mongodb</p>
+                                <a href="https://github.com/bowtiedalien/SkinHealthApp" class="link-custom">Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect mb-4">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/project2.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Coffeehouse</h4>
+                                <p>A coffee ordering application made with Flutter during one of my internships</p>
+                                <a href="https://github.com/bowtiedalien/Challenge1_CoffeeHouse" class="link-custom">Code</a>
+                            </div>
+                        </div>
+
+                        <div class="card-custom rounded-4 bg-base shadow-effect mb-4">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/project3.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Rabaa's Archive</h4>
+                                <p>An archive website for one of the greatest massacres since WW2: Rabaa's Massacre.</p>
+                                <a href="https://github.com/bowtiedalien/Rabaa_Archive-v2-" class="link-custom">Code</a>
+                            </div>
+                        </div>
+
+                        <div class="card-custom rounded-4 bg-base shadow-effect mb-4">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/project3.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Video Projects</h4>
+                                <p>Animation and Stop Motion videos created with Adobe AfterEffects for high school projects :)</p>
+                                <ul>
+                                    <li><a href="https://youtu.be/NDcCqOtTFAg">أمن المعلومات: فيديو أنيمشن عن أمن المعلومات عملته في سنة ثالثة ثانوي</a></li>
+                                    <li><a href="https://youtu.be/5XiH9B0EXEg">سبع عادات ليوم صحي</a></li>
+                                    <li><a href="https://youtu.be/7pP5qaOfmrQ">محاربة الملخصات المدرسية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //WORK -->
+        
+        <!--TODO: Add hobbies section here-->
+
+
+        <!-- ABOUT -->
+        <section id="about" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">ABOUT</h6>
+                        <h1>My Education & Experience</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+
+                        <h3 class="mb-4">Education</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Bachelor's of Computer Engineering</h4>
+                                    <p class="text-brand mb-2">Doğuş University (2017 - 2018)</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" >
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Bachelor's of Computer Engineering (cont.)</h4>
+                                    <p class="text-brand mb-2">İstanbul Kültür University (2018 - 2021)</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <h3 class="mb-4">Experience</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h5>Teaching Assistant</h5>
+                                    <p class="text-brand mb-2">Zewail City (2023 - current)</p>
+                                    <p class="mb-0">Teaching: 
+                                        <ul>
+                                            <li>CIE202 (Fundamental of Computer Programming)</li>
+                                            <li>CIE206 (Database Management System)</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h5>Frontend developer</h5>
+                                    <p class="text-brand mb-2">Freedomdev (2021 - 2021)</p>
+                                    <p>ASP.NET MVC, MSSQL, HTML, JQuery</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h5>Translator and Transcriber</h5>
+                                    <p class="text-brand mb-2">Upwork (2019 - 2020)</p>
+                                    <p class="mb-0">Worked as EN-AR translator and transcriber on Upwork for over a year, translating and transcribing educational videos and lectures.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h5>Flutter Developer Intern</h5>
+                                    <p class="text-brand mb-2">Rocksoft.io (2019 - 2019)</p>
+                                    <p class="mb-0">Zarcony (2020 - 2020)</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h5>Elementary School Teacher</h5>
+                                    <p class="text-brand mb-2">Hikmet Derneği (2019 - 2021)</p>
+                                    <p class="mb-0">Volunteer work in a charity organization as a teacher to children aged between 7 and 10.
+                                        - Job included: singlehandedly preparing the curriculum, interactive lesson plans, slides, multimedia.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- //ABOUT -->
+        <!-- CONTACT -->
+        <section id="contact" class="full-height px-lg-5">
+            <form action="#" class="row g-lg-3 gy-3">
+            <div class="container">
+                <div>
+                    <div class="col-lg-8 pb-4">
+                        <h6 class="text-brand">CONTACT</h6>
+                    </div>
+
+                <div class="pb-4">
+                <a href="https://github.com/bowtiedalien" class="btn btn-brand"><span class="la la-github"></span> Github</a>
+                </div>
+                <div class="pb-4">
+                <a href="https://www.linkedin.com/in/sarah-ahmed-desouky/" class="btn btn-brand"><span class="la la-linkedin"></span> Linkedin</a>
+                </div>
+                <div class="pb-4">
+                <a href="mailto:sarahahmed1918@gmail.com?subject=feedback" class="btn btn-brand"><span class="la la-inbox"></span> Email Me</a>
+                </div>
+            </div>
+            </form>
+        </section>
+        <!-- //CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">Credits: Original design of this website is taken from this template on <a href="https://github.com/SA7MAN/joncarter/tree/main">Github</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //FOOTER -->
+
     </div>
-
-    <div class="nav">
-      <img id="profpic" src="profpic.jpg" alt="my picture">
-      <div id="NameandList"> <h2> Sarah Ahmed </h2>
-      <ul>
-        <li><a href="index.html">Main Page</a></li>
-        <li><a href="index.html">Education</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="courses.html">Courses taken</a></li>
-        <li><a href="jobs.html">Experience</a></li>
-        <li><a href="favourites.html">Things I recommend</a></li>
-        <li><a href="thoughts.html">Thoughts</a></li>
-        <li><a href="contactme.html">Contact Informations</a></li>
-        <li><a href="Question&Answers.html">Questions and Answers</a></li>
-      </ul>
-      </div>
-    </div>
-
-    <div class="main">
-      <h4>University</h4>
-      <ul>
-          <li> Doğuş University
-            <ul><span>&#8627;</span>Computer Engineering
-            <br>
-            <span>&#8627;</span>2017-2018 
-          </ul>
-            </li>
-          <li> Istanbul Kültür University
-            <ul><span>&#8627;</span>Bachelors of Computer Engineering
-              <br>
-              <span>&#8627;</span> 2018-2021
-            </ul>
-      </ul>
+    <!-- //CONTENT WRAPPER -->
 
 
-    </div>
 
-  </body>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
